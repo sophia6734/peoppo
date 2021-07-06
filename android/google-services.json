@@ -1,0 +1,47 @@
+{
+    "project_info": {
+      "project_number": "64294922292",
+      "project_id": "peoppo-bf34d",
+      "storage_bucket": "peoppo-bf34d.appspot.com"
+    },
+    "client": [
+      {
+        "client_info": {
+          "mobilesdk_app_id": "1:64294922292:android:ea7ca82efe18bf78810261",
+          "android_client_info": {
+            "package_name": "com.example.peoppo"
+          }
+        },
+        "oauth_client": [
+          {
+            "client_id": "64294922292-rnmqdbegr95na94r8s44505itk3gp6l8.apps.googleusercontent.com",
+            "client_type": 1,
+            "android_info": {
+              "package_name": "com.example.peoppo",
+              "certificate_hash": "58694954b1bf6eca71159825215420ab8c43c4b6"
+            }
+          },
+          {
+            "client_id": "64294922292-159v0ld6na961b3pq32rk0nkffmi6idv.apps.googleusercontent.com",
+            "client_type": 3
+          }
+        ],
+        "api_key": [
+          {
+            "current_key": "AIzaSyCq7Nh9EeXf4bC0kmEefbIgORDTwomEmJ0"
+          }
+        ],
+        "services": {
+          "appinvite_service": {
+            "other_platform_oauth_client": [
+              {
+                "client_id": "64294922292-159v0ld6na961b3pq32rk0nkffmi6idv.apps.googleusercontent.com",
+                "client_type": 3
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "configuration_version": "1"
+  }
