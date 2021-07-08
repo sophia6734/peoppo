@@ -1,47 +1,47 @@
 {
-    "project_info": {
-      "project_number": "64294922292",
-      "project_id": "peoppo-bf34d",
-      "storage_bucket": "peoppo-bf34d.appspot.com"
-    },
-    "client": [
-      {
-        "client_info": {
-          "mobilesdk_app_id": "1:64294922292:android:ea7ca82efe18bf78810261",
-          "android_client_info": {
-            "package_name": "com.example.peoppo"
-          }
-        },
-        "oauth_client": [
-          {
-            "client_id": "64294922292-rnmqdbegr95na94r8s44505itk3gp6l8.apps.googleusercontent.com",
-            "client_type": 1,
-            "android_info": {
-              "package_name": "com.example.peoppo",
-              "certificate_hash": "58694954b1bf6eca71159825215420ab8c43c4b6"
-            }
-          },
-          {
-            "client_id": "64294922292-159v0ld6na961b3pq32rk0nkffmi6idv.apps.googleusercontent.com",
-            "client_type": 3
-          }
-        ],
-        "api_key": [
-          {
-            "current_key": "AIzaSyCq7Nh9EeXf4bC0kmEefbIgORDTwomEmJ0"
-          }
-        ],
-        "services": {
-          "appinvite_service": {
-            "other_platform_oauth_client": [
-              {
-                "client_id": "64294922292-159v0ld6na961b3pq32rk0nkffmi6idv.apps.googleusercontent.com",
-                "client_type": 3
+  "project_info": {
+    "project_number": "883138177283",
+    "firebase_url": "https://peoppo-cc1db-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "peoppo-cc1db",
+    "storage_bucket": "peoppo-cc1db.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:883138177283:android:90e7e9c5bdde5b242da136",
+        "android_client_info": {
+          "package_name": "com.example.peoppo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "883138177283-bf990fr8c6pj33tcltjn49pdkmothqj4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2k2vB9qoWtAydBuu6VLdIb0Q-EFJtRSc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "883138177283-bf990fr8c6pj33tcltjn49pdkmothqj4.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "883138177283-t39dejeg6n8ol3hl1pqs1a4a7q3lo5f1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.peoppo"
               }
-            ]
-          }
+            }
+          ]
         }
       }
-    ],
-    "configuration_version": "1"
-  }
+    }
+  ],
+  "configuration_version": "1"
+}
