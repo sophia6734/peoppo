@@ -1,6 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:peoppo/screens/home_screen.dart';
+import 'location_screen.dart';
 
 enum MobileVerificationState {
   SHOW_MOBILE_FORM_STATE,
@@ -40,7 +41,7 @@ class _LoginScreenState extends State<LoginSMSScreen> {
 
       if (authCredential?.user != null) {
         Navigator.push(
-            context, MaterialPageRoute(builder: (context) => HomeScreen()));
+            context, MaterialPageRoute(builder: (context) => LocationScreen()));
       }
     } on FirebaseAuthException catch (e) {
       setState(() {
