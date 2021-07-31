@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../screens/graduate_screen.dart';
 import '../components/enableButton.dart';
+import '../components/profileHealine.dart';
 
 class WorkWidget extends StatelessWidget {
   WorkWidget(this.title, this.textField1, this.textField2, this.page);
@@ -13,13 +14,13 @@ class WorkWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Theme.of(context).primaryColor,
-      body: Center(
+      body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.all(8.0),
+          padding: const EdgeInsets.all(18.0),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text(title),
+              ProfileHeadline(title),
               Column(
                 children: [
                   TextField(
@@ -37,10 +38,15 @@ class WorkWidget extends StatelessWidget {
                       labelText: textField2,
                     ),
                   ),
+                  SizedBox(height: 20),
+                  Align(
+                    child: EnableButtonSM('Go', page),
+                    alignment: Alignment.centerRight,
+                  ),
                 ],
               ),
-              EnableButtonSM('Go', page),
               EnableButtonLG('Skip', page),
+              SizedBox(height: 0),
             ],
           ),
         ),

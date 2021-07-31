@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../components/dateTimePicker.dart';
 import '../components/enableButton.dart';
 import 'matchingWith_screen.dart';
+import '../components/profileHealine.dart';
 
 class BirthdayScreen extends StatelessWidget {
   DateTime _dateTime = DateTime.now();
@@ -9,14 +10,32 @@ class BirthdayScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Theme.of(context).primaryColor,
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            const Text('What\'s your birthday...'),
-            DateTimePicker(),
-            EnableButtonSM('Not Now', MatchingWithScreen()),
-          ],
+      body: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.all(18.0),
+          child: Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                ProfileHeadline('What\'s your birthday...'),
+                Column(
+                  children: [
+                    DateTimePicker(),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    Align(
+                      child: EnableButtonSM('Go', MatchingWithScreen()),
+                      alignment: Alignment.centerRight,
+                    ),
+                  ],
+                ),
+                SizedBox(
+                  height: 0,
+                ),
+              ],
+            ),
+          ),
         ),
       ),
     );

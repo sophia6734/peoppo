@@ -18,10 +18,8 @@ class EnableButton extends StatelessWidget {
           primary: Colors.black,
           backgroundColor: Theme.of(context).accentColor,
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(18.0),
+            borderRadius: BorderRadius.circular(5.0),
           ),
-
-          //padding: EdgeInsets.symmetric(horizontal: 100),
         ),
         onPressed: () {
           Navigator.push(context, MaterialPageRoute(builder: (context) {

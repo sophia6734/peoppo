@@ -16,7 +16,7 @@ class EnableScreen extends StatelessWidget {
           children: [
             Text(
               title,
-              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
             ),
             Container(
               child: Column(children: [

@@ -18,6 +18,12 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.orange,
         accentColor: Colors.white,
         visualDensity: VisualDensity.adaptivePlatformDensity,
+        textTheme: const TextTheme(
+          headline1: TextStyle(
+              fontSize: 30.0,
+              fontStyle: FontStyle.italic,
+              fontWeight: FontWeight.bold),
+        ),
       ),
       debugShowCheckedModeBanner: false,
       home: SafeArea(child: LoginScreen()),
