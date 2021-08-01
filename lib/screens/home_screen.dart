@@ -12,8 +12,10 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Text("Home Screen"),
+      body: Container(
+        child: Center(
+          child: Text("Home Screen"),
+        ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () async {
