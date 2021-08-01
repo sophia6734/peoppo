@@ -16,6 +16,14 @@
       "oauth_client": [
         {
           "client_id": "883138177283-bf990fr8c6pj33tcltjn49pdkmothqj4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.peoppo",
+            "certificate_hash": "41bf8bd6feb4f774a4aa99e1f5d8ca4fa87373cb"
+          }
+        },
+        {
+          "client_id": "883138177283-bf990fr8c6pj33tcltjn49pdkmothqj4.apps.googleusercontent.com",
           "client_type": 3
         }
       ],

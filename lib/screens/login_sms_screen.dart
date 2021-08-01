@@ -39,7 +39,7 @@ class _LoginScreenState extends State<LoginSMSScreen> {
         showLoading = false;
       });
 
-      if (authCredential?.user != null) {
+      if (authCredential.user != null) {
         Navigator.push(
             context, MaterialPageRoute(builder: (context) => LocationScreen()));
       }

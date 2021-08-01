@@ -26,6 +26,7 @@
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>com.googleusercontent.apps.883138177283-t39dejeg6n8ol3hl1pqs1a4a7q3lo5f1</string>
+				<string>fb342432244104190</string>
 			</array>
 		</dict>
 	</array>
@@ -52,5 +53,16 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+<key>FacebookAppID</key>
+<string>342432244104190</string>
+<key>FacebookDisplayName</key>
+<string>peoppo</string>
+<key>LSApplicationQueriesSchemes</key>
+<array>
+  <string>fbapi</string>
+  <string>fb-messenger-share-api</string>
+  <string>fbauth2</string>
+  <string>fbshareextension</string>
+</array>
 </dict>
 </plist>
