@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:peoppo/screens/login_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:peoppo/screens/chatList_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
         ),
       ),
       debugShowCheckedModeBanner: false,
-      home: SafeArea(child: LoginScreen()),
+      home: SafeArea(child: ChatListScreen()),
     );
   }
 }
