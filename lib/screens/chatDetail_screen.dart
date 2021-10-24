@@ -1,10 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:peoppo/model/chatMessage.dart';
 
-class ChatDetailScreen extends StatelessWidget {
+class ChatDetailScreen extends StatefulWidget {
   String imagePath;
   ChatDetailScreen({required this.imagePath});
 
+  @override
+  _ChatDetailScreenState createState() => _ChatDetailScreenState();
+}
+
+class _ChatDetailScreenState extends State<ChatDetailScreen> {
   List<ChatMessage> messages = [
     ChatMessage(messageContent: "Hello, Will", messageType: "receiver"),
     ChatMessage(messageContent: "How have you been?", messageType: "receiver"),
@@ -15,6 +20,9 @@ class ChatDetailScreen extends StatelessWidget {
     ChatMessage(
         messageContent: "Is there any thing wrong?", messageType: "sender"),
   ];
+
+  bool textIsFilled = false;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,7 +48,7 @@ class ChatDetailScreen extends StatelessWidget {
                   width: 2,
                 ),
                 CircleAvatar(
-                  backgroundImage: AssetImage(imagePath),
+                  backgroundImage: AssetImage(widget.imagePath),
                   maxRadius: 20,
                 ),
                 SizedBox(
@@ -114,7 +122,7 @@ class ChatDetailScreen extends StatelessWidget {
               padding: EdgeInsets.only(left: 10, bottom: 10, top: 10),
               height: 60,
               width: double.infinity,
-              color: Colors.white,
+              color: Colors.grey.shade200,
               child: Row(
                 children: <Widget>[
                   GestureDetector(
@@ -138,25 +146,54 @@ class ChatDetailScreen extends StatelessWidget {
                   ),
                   Expanded(
                     child: TextField(
+                      textAlign: TextAlign.start,
                       decoration: InputDecoration(
-                          hintText: "Write message...",
-                          hintStyle: TextStyle(color: Colors.black54),
-                          border: InputBorder.none),
+                        suffixIcon: IconButton(
+                          icon: Icon(Icons.gif_rounded),
+                          iconSize: 26,
+                          onPressed: () => {},
+                        ),
+                        contentPadding: EdgeInsets.all(10.0),
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(10.0),
+                        ),
+                        filled: true,
+                        hintText: "Write message...",
+                        hintStyle: TextStyle(color: Colors.black),
+                        fillColor: Colors.white,
+                      ),
+                      onChanged: (value) {
+                        value.isEmpty
+                            ? setState(() {
+                                textIsFilled = false;
+                              })
+                            : setState(() {
+                                textIsFilled = true;
+                              });
+                      },
                     ),
                   ),
                   SizedBox(
-                    width: 15,
+                    width: 5,
                   ),
+                  IconButton(
+                    icon: Icon(textIsFilled ? Icons.send : Icons.mic_rounded,
+                        color: Colors.black, size: 20),
+                    onPressed: () {},
+                  ),
+                  /*
                   FloatingActionButton(
                     onPressed: () {},
                     child: Icon(
-                      Icons.send,
+                      Icons.mic_rounded,
                       color: Colors.white,
-                      size: 18,
+                      size: 22,
                     ),
                     backgroundColor: Colors.blue,
                     elevation: 0,
                   ),
+
+                   */
                 ],
               ),
             ),

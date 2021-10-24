@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:peoppo/screens/chatDetail_screen.dart';
+import 'package:peoppo/components/profilePicList.dart';
 
 class ConversationList extends StatefulWidget {
   String name;
